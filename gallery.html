@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - MM HAIR STUDIOS INC.</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80') repeat;
+      background-size: cover;
+      animation: moveBg 40s linear infinite;
+      font-family: 'Montserrat', sans-serif;
+      color: #4b2e05;
+    }
+
+    @keyframes moveBg {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 0; }
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.95);
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
+
+    header {
+      background-color: #7b3f00;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background-color: #a0522d;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      display: inline-block;
+      padding: 14px 0;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f0c49b;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto 0;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 3px solid #a0522d;
+      padding-bottom: 8px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #4b2e05;
+      animation: fadeIn 1.8s ease-in-out;
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      background: #fff9f4;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+      border-radius: 12px;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(123, 63, 0, 0.75);
+      color: #fff9f4;
+      width: 100%;
+      padding: 12px 15px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 0 0 12px 12px;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    footer {
+      background-color: #7b3f00;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #f0d8b7;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <img src="https://via.placeholder.com/60x60?text=Logo" alt="MM Hair Studios Logo" />
+      <h1>MM HAIR STUDIOS INC.</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="shop.html">Shop</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <h2>Our Gallery</h2>
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/tMvSG6rx/1.jpg" alt="Hair Extension Style 1" />
+          <div class="caption">Hair Extension Style 1</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/0pZdFmxG/2.jpg" alt="Hair Extension Style 2" />
+          <div class="caption">Hair Extension Style 2</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/4g31Dbb5/3.jpg" alt="Hair Coloring Example" />
+          <div class="caption">Hair Coloring Example</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/k6KGC3Wd/4.jpg" alt="Hair Styling Session" />
+          <div class="caption">Hair Styling Session</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/wh5vvdZy/5.jpg" alt="Salon Hair Treatment" />
+          <div class="caption">Salon Hair Treatment</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/RGMqsxG1/6.jpg" alt="Professional Hair Care" />
+          <div class="caption">Professional Hair Care</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/0pCcn1fw/7.jpg" alt="Hair Extensions Close-up" />
+          <div class="caption">Hair Extensions Close-up</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/hJtnVg3g/8.jpg" alt="Hair Coloring Process" />
+          <div class="caption">Hair Coloring Process</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/vxzY02TV/9.jpg" alt="Salon Styling Tools" />
+          <div class="caption">Salon Styling Tools</div>
+        </div>
+
+        <!-- Repeat the images to fill up to 25 -->
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/tMvSG6rx/1.jpg" alt="Hair Extension Style 1" />
+          <div class="caption">Hair Extension Style 1</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/0pZdFmxG/2.jpg" alt="Hair Extension Style 2" />
+          <div class="caption">Hair Extension Style 2</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/4g31Dbb5/3.jpg" alt="Hair Coloring Example" />
+          <div class="caption">Hair Coloring Example</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/k6KGC3Wd/4.jpg" alt="Hair Styling Session" />
+          <div class="caption">Hair Styling Session</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/wh5vvdZy/5.jpg" alt="Salon Hair Treatment" />
+          <div class="caption">Salon Hair Treatment</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/RGMqsxG1/6.jpg" alt="Professional Hair Care" />
+          <div class="caption">Professional Hair Care</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/0pCcn1fw/7.jpg" alt="Hair Extensions Close-up" />
+          <div class="caption">Hair Extensions Close-up</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/hJtnVg3g/8.jpg" alt="Hair Coloring Process" />
+          <div class="caption">Hair Coloring Process</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/vxzY02TV/9.jpg" alt="Salon Styling Tools" />
+          <div class="caption">Salon Styling Tools</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/tMvSG6rx/1.jpg" alt="Hair Extension Style 1" />
+          <div class="caption">Hair Extension Style 1</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/0pZdFmxG/2.jpg" alt="Hair Extension Style 2" />
+          <div class="caption">Hair Extension Style 2</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/4g31Dbb5/3.jpg" alt="Hair Coloring Example" />
+          <div class="caption">Hair Coloring Example</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/k6KGC3Wd/4.jpg" alt="Hair Styling Session" />
+          <div class="caption">Hair Styling Session</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/wh5vvdZy/5.jpg" alt="Salon Hair Treatment" />
+          <div class="caption">Salon Hair Treatment</div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>MM HAIR STUDIOS INC. | 131 Ron Kolbus Private, Ottawa, ON K1R 1C3 | Phone: 613-930-1200 | Email: <a href="mailto:mmhairstudiosinc@hotmail.com">mmhairstudiosinc@hotmail.com</a></p>
+      <p>&copy; 2025 MM HAIR STUDIOS INC. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

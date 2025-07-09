@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - MM HAIR STUDIOS INC.</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80') repeat;
+      background-size: cover;
+      animation: moveBg 40s linear infinite;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    @keyframes moveBg {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 0; }
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.95);
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
+
+    header {
+      background-color: #7b3f00;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background-color: #a0522d;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      display: inline-block;
+      padding: 14px 0;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f0c49b;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 30px auto 0;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 3px solid #a0522d;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #4b2e05;
+      animation: fadeIn 1.8s ease-in-out;
+    }
+
+    section.service {
+      background-color: #fff9f4;
+      border-left: 6px solid #a0522d;
+      padding: 25px 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    section.service img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+
+    section.service h3 {
+      margin-top: 0;
+      color: #7b3f00;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    section.service p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #4b2e05;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-weight: 700;
+      color: #a0522d;
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      background-color: #d2691e;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin: 10px 15px 30px 0;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-link:hover,
+    .btn-link:focus {
+      background-color: #b3540f;
+      transform: scale(1.05);
+      outline: none;
+    }
+
+    .faq-section, .care-tips, .testimonials {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      background-color: #fff9f4;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      color: #4b2e05;
+      animation: fadeIn 2.2s ease-in-out;
+    }
+
+    .faq-section h3, .care-tips h3, .testimonials h3 {
+      color: #7b3f00;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .faq-section ul, .care-tips ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .testimonials blockquote {
+      font-style: italic;
+      margin: 15px 0;
+      font-size: 1.1rem;
+      border-left: 4px solid #a0522d;
+      padding-left: 15px;
+      color: #6a3a00;
+      background-color: #fdf5e6;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background-color: #7b3f00;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #f0d8b7;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <img src="https://via.placeholder.com/60x60?text=Logo" alt="MM Hair Studios Logo" />
+      <h1>MM HAIR STUDIOS INC.</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="shop.html">Shop</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <h2>Our Services</h2>
+
+      <section class="service">
+        <h3>Hair Extensions</h3>
+        <p class="price">Starting at $250</p>
+        <p>Our premium hair extensions add volume, length, and glamour to your natural hair. Using the highest quality Remy human hair, our expert stylists ensure a seamless blend and comfortable wear. Choose from various application methods including tape-in, clip-in, and fusion, tailored to your lifestyle and preferences.</p>
+        <p>Whether you want a subtle boost or a dramatic transformation, we’ll work with you to create your dream look that feels natural and lasts.</p>
+        <img src="https://images.unsplash.com/photo-1624551390318-2540e49544b7?auto=format&fit=crop&w=1200&q=80" alt="Hair extensions application" />
+      </section>
+
+      <section class="service">
+        <h3>Hair Coloring</h3>
+        <p class="price">From $120</p>
+        <p>Our professional hair coloring services range from classic single-process shades to multi-dimensional balayage, highlights, and creative fantasy colors. We use ammonia-free, cruelty-free, and high-quality products to ensure vibrant, healthy-looking hair.</p>
+        <p>Our colorists consult with you to select tones that enhance your complexion and style, delivering personalized results with long-lasting shine and minimal damage.</p>
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1200&q=80" alt="Hair coloring session" />
+      </section>
+
+      <section class="service">
+        <h3>Hair Styling</h3>
+        <p class="price">Starting at $60</p>
+        <p>From everyday chic to elegant event styling, our team crafts looks that highlight your beauty and personality. Whether you want a sleek blowout, voluminous curls, or an intricate updo, we tailor each style to suit your occasion and preferences.</p>
+        <p>We also offer professional consultation on hair care routines and styling tips to maintain your look between visits.</p>
+        <img src="https://images.unsplash.com/photo-1496317556649-f930d733eea2?auto=format&fit=crop&w=1200&q=80" alt="Elegant hair styling" />
+      </section>
+
+      <section class="service">
+        <h3>Special Packages</h3>
+        <p class="price">From $350</p>
+        <p>Enjoy bundled services designed for complete hair transformation and savings. Popular packages include:</p>
+        <ul>
+          <li><strong>Extensions + Coloring Combo:</strong> Get luscious length and stunning color in one session.</li>
+          <li><strong>Styling + Conditioning Treatment:</strong> Perfect for special occasions or routine pampering.</li>
+          <li><strong>Custom Bridal Package:</strong> Includes hair consultation, styling, trial, and day-of services.</li>
+        </ul>
+      </section>
+
+      <section class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <ul>
+          <li><strong>How long do hair extensions last?</strong> Properly maintained extensions can last 8–12 weeks depending on the type and care.</li>
+          <li><strong>Is hair coloring damaging?</strong> We use gentle, high-quality products that minimize damage and nourish your hair.</li>
+          <li><strong>Can I wash my hair after extensions?</strong> Yes, but we recommend waiting 48 hours before washing to ensure secure bonding.</li>
+          <li><strong>Do I need a consultation before services?</strong> Yes! We encourage consultations to personalize your experience and ensure your goals are met.</li>
+        </ul>
+      </section>
+
+      <section class="care-tips">
+        <h3>Hair Care Tips</h3>
+        <ul>
+          <li>Use sulfate-free shampoos and conditioners to maintain color and hair health.</li>
+          <li>Brush extensions gently with a loop brush to avoid damage.</li>
+          <li>Avoid excessive heat styling to prolong your color and extension life.</li>
+          <li>Schedule regular maintenance appointments to keep your hair looking fresh.</li>
+        </ul>
+      </section>
+
+      <section class="testimonials">
+        <h3>What Our Clients Say</h3>
+        <blockquote>
+          "MM Hair Studios transformed my hair with beautiful extensions that feel so natural. The staff was professional and attentive every step of the way." – Sarah L.
+        </blockquote>
+        <blockquote>
+          "I love my new hair color! The colorist really understood my vision and delivered flawless results. Highly recommend this salon." – Jasmine M.
+        </blockquote>
+        <blockquote>
+          "The styling team made my wedding day perfect with their expert updos and calming presence. Thank you, MM Hair Studios!" – Emily R.
+        </blockquote>
+      </section>
+
+      <div style="text-align: center;">
+        <a href="contact.html" class="btn-link">Book Your Appointment</a>
+        <a href="shop.html" class="btn-link">Shop Hair Products</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>MM HAIR STUDIOS INC. | 131 Ron Kolbus Private, Ottawa, ON K1R 1C3 | Phone: 613-930-1200 | Email: <a href="mailto:mmhairstudiosinc@hotmail.com">mmhairstudiosinc@hotmail.com</a></p>
+      <p>&copy; 2025 MM HAIR STUDIOS INC. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

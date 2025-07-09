@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop - MM HAIR STUDIOS INC.</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80') repeat;
+      background-size: cover;
+      animation: moveBg 40s linear infinite;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    @keyframes moveBg {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 0; }
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.95);
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
+
+    header {
+      background-color: #7b3f00;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background-color: #a0522d;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      display: inline-block;
+      padding: 14px 0;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f0c49b;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 30px auto 0;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 3px solid #a0522d;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #4b2e05;
+      animation: fadeIn 1.8s ease-in-out;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .product {
+      background-color: #fff9f4;
+      border-left: 6px solid #a0522d;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      width: 280px;
+      animation: fadeIn 2s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin: 0 0 10px 0;
+      color: #7b3f00;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .product p {
+      color: #4b2e05;
+      font-size: 1rem;
+      line-height: 1.4;
+      text-align: center;
+      margin-bottom: 10px;
+      flex-grow: 1;
+    }
+
+    .price {
+      font-weight: 700;
+      color: #a0522d;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .btn-order {
+      background-color: #d2691e;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-align: center;
+      width: 100%;
+    }
+
+    .btn-order:hover,
+    .btn-order:focus {
+      background-color: #b3540f;
+      transform: scale(1.05);
+      outline: none;
+    }
+
+    footer {
+      background-color: #7b3f00;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #f0d8b7;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <img src="https://via.placeholder.com/60x60?text=Logo" alt="MM Hair Studios Logo" />
+      <h1>MM HAIR STUDIOS INC.</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="shop.html">Shop</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <h2>Shop Our Products</h2>
+
+      <div class="product-list">
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1600180758894-564c0421f1cc?auto=format&fit=crop&w=400&q=80" alt="Virgin Hair Extensions" />
+          <h3>Virgin Hair Extensions</h3>
+          <p>100% unprocessed, untreated virgin hair with cuticles intact for the most natural, durable, and luxurious look and feel.</p>
+          <p class="price">Prices starting from $550</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1614288547399-89d4e2a94d90?auto=format&fit=crop&w=400&q=80" alt="Premium Remy Hair Extensions" />
+          <h3>Premium Remy Hair Extensions</h3>
+          <p>100% Remy human hair, silky smooth and tangle-free. Available in multiple lengths and colors for a perfect match.</p>
+          <p class="price">Prices starting from $399</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1542206395-9feb3edaa68f?auto=format&fit=crop&w=400&q=80" alt="Tape-In Hair Extensions" />
+          <h3>Tape-In Hair Extensions</h3>
+          <p>Lightweight and reusable, tape-in extensions provide a natural look and are perfect for longer wear.</p>
+          <p class="price">Prices starting from $350</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1560184897-4dfd84be1f4d?auto=format&fit=crop&w=400&q=80" alt="Micro-Link Hair Extensions" />
+          <h3>Micro-Link Hair Extensions</h3>
+          <p>Also known as bead extensions, they are applied without heat or glue for a natural and long-lasting finish.</p>
+          <p class="price">Prices starting from $380</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1532305642253-6f20d0989362?auto=format&fit=crop&w=400&q=80" alt="Fusion (Pre-Bonded) Hair Extensions" />
+          <h3>Fusion (Pre-Bonded) Hair Extensions</h3>
+          <p>Long-lasting extensions bonded with keratin and heat for a seamless, natural appearance.</p>
+          <p class="price">Prices starting from $450</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1515968111608-f43749a1b474?auto=format&fit=crop&w=400&q=80" alt="Halo Hair Extensions" />
+          <h3>Halo Hair Extensions</h3>
+          <p>Non-damaging and easy to apply, halo extensions sit on your head like a crown, perfect for beginners.</p>
+          <p class="price">Prices starting from $250</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1590080877777-8b6fa3c312d4?auto=format&fit=crop&w=400&q=80" alt="Clip-In Hair Extensions" />
+          <h3>Clip-In Hair Extensions</h3>
+          <p>Easy to use, non-permanent extensions for instant volume and length. Perfect for special occasions or daily wear.</p>
+          <p class="price">Prices starting from $250</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1549989474-6a8b5b98c7b8?auto=format&fit=crop&w=400&q=80" alt="Ponytail Hair Extensions" />
+          <h3>Ponytail Hair Extensions</h3>
+          <p>Quick and easy to add volume and length for a polished ponytail look.</p>
+          <p class="price">Prices starting from $180</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1580582937452-18f7fa4b9af0?auto=format&fit=crop&w=400&q=80" alt="Hair Color Care Kit" />
+          <h3>Hair Color Care Kit</h3>
+          <p>A nourishing shampoo and conditioner duo designed to keep your color vibrant and hair healthy.</p>
+          <p class="price">Prices starting from $45</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1533258392343-52abf451d229?auto=format&fit=crop&w=400&q=80" alt="Luxury Hair Brush" />
+          <h3>Luxury Hair Brush</h3>
+          <p>Ergonomic design with gentle bristles perfect for detangling extensions and natural hair.</p>
+          <p class="price">Prices starting from $30</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1582515073490-dc2ed7a4d77a?auto=format&fit=crop&w=400&q=80" alt="Deep Conditioning Treatment" />
+          <h3>Deep Conditioning Treatment</h3>
+          <p>Restore moisture and shine with our salon-grade deep conditioning treatment, perfect for all hair types.</p>
+          <p class="price">Prices starting from $60</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80" alt="Keratin Smoothing Serum" />
+          <h3>Keratin Smoothing Serum</h3>
+          <p>Smooth frizz and add shine with this lightweight serum infused with keratin for healthier hair.</p>
+          <p class="price">Prices starting from $35</p>
+          <a href="contact.html" class="btn-order">Contact to Order</a>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>MM HAIR STUDIOS INC. | 131 Ron Kolbus Private, Ottawa, ON K1R 1C3 | Phone: 613-930-1200 | Email: <a href="mailto:mmhairstudiosinc@hotmail.com">mmhairstudiosinc@hotmail.com</a></p>
+      <p>&copy; 2025 MM HAIR STUDIOS INC. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
